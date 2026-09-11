@@ -1,2 +1,5 @@
 *.sql linguist-detectable=True
 *.bat linguist-detectable=True
+
+SQL_P3_BD2_E2/Script_BPPedidos_Povoando_Tabelas.sql linguist-vendored
+SQL_P3_BD2_E2/Script_BPPedidos_Criando_Tabelas.sql linguist-vendored
