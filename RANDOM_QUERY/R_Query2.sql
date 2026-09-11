@@ -36,5 +36,21 @@ from Pedidos
 where MONTH(DataDoPedido) = 12
 group by YEAR(DataDoPedido), MONTH(DataDoPedido)
 
+-- Quanto foi vendido em quantidade de produtos oriundos do Japão por ano
+
+SELECT
+    YEAR(pe.DataDoPedido) AS Ano,
+    SUM(dp.Quantidade) AS QuantidadeVendida
+FROM Produtos AS p
+INNER JOIN Fornecedores AS f
+    ON p.CodigoDoFornecedor = f.CodigoDoFornecedor
+INNER JOIN [Detalhes_do_Pedido] AS dp
+    ON p.CodigoDoProduto = dp.CodigoDoProduto
+INNER JOIN Pedidos AS pe
+    ON dp.NumeroDoPedido = pe.NumeroDoPedido
+WHERE f.Pais = 'Japão'
+GROUP BY YEAR(pe.DataDoPedido)
+ORDER BY Ano;
+
 
 
