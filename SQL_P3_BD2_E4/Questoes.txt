@@ -1,0 +1,39 @@
+1. Exibir o Número do Pedido, o nome da Empresa, o Telefone e o Fax de todos os clientes que realizaram pedidos.
+
+2. Exibir o Código do Cliente, o nome da Empresa (Cliente), a Data de solicitação do pedido e o valor do frete pago.
+
+3. Informar o Código do Funcionário, nome, Cargo, Código do Cliente e a Data do Pedido de todos os pedidos realizados.
+
+4. Exibir o Número do Pedido, a Data do Pedido, a Data de Entrega e o nome da Empresa que fez o transporte.
+
+5. Exibir o nome do funcionário, o número do pedido e o nome da empresa de todos os pedidos realizados.
+
+6. Exibir o nome do Produto, o nome da Categoria e o nome da Empresa (Fornecedor) de todo os produtos.
+
+7. Exibir o nome do Produto, o Preço Unitário, a quantidade, o Número do Pedido e o nome da Empresa que fez o transporte.
+
+8. Exibir o nome do Produto, Data do Pedido e o nome da Empresa (Cliente) que fez o pedido.
+
+9. Exibir o nome da Empresa (Fornecedor), o nome do Produto, Preço Unitário (do Produto), a Data do Pedido e o nome do Cliente que fez o pedido.
+
+10. Exibir o nome do funcionário e o nome da Empresa que solicitou o pedido (Cliente).
+
+11. Exibir o nome da Categoria, o nome do Produto, o Preço Unitário (de Venda), Quantidade e o Desconto de todo os produtos comercializados.
+
+12. Exibir o Número do Pedido, a Data do Pedido, o nome da Empresa (Cliente) e o nome da Empresa (Transportadora) que efetuou o transporte.
+
+13. Exibir o Código do Produto, o nome do Produto, o Código do Fornecedor e o nome da Empresa (Fornecedor) de todos os produtos.
+
+14. Exibir o nome do funcionário, o Número do Pedido e o nome da empresa que fez o transporte.
+
+15. Exibir o nome dos produtos já comercializados pela empresa.
+
+16. Exibir um relatório com o nome do funcionário o valor total de pedidos feitos pelo mesmo e duas colunas com as comissões de 5% e 10%.
+
+17. Exibir um relatório com o nome da categoria e a quantidade de mercadorias vendidas por categoria.
+
+18. Exibir o nome de todas as transportadoras com uma coluna de total de fretes pagos para essa transportadora e uma outra com o número de pedidos atendido pela mesma.
+
+19. Exibir um relatório com o nome do cliente e o valor dos descontos dados a ele.
+
+20. Exibir um relatório com o nome do funcionário e o total de desconto dado por ele.
