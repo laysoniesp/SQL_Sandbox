@@ -29,9 +29,9 @@ group by f.Nome
 select distinct year(DataDoPedido)
 FROM Pedidos 
 
-select YEAR(DataDoPedido),'Ano Pedido',
-        MONTH(DataDoPedido), 'Mes Pedido',
-        count(*), 'Total'
+select YEAR(DataDoPedido) as [Ano Pedido],
+        MONTH(DataDoPedido) as [Mes Pedido],
+        count(*) as [Total]
 from Pedidos
 where MONTH(DataDoPedido) = 12
 group by YEAR(DataDoPedido), MONTH(DataDoPedido)
