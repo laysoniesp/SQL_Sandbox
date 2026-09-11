@@ -24,4 +24,17 @@ group by f.Nome
 -- To mais perdido que cego em tiroteio, mas vamos que vamos, bora estudar e aprender mais sobre SQL e banco de dados. --
 -- Olha esse "count", "join", "inner join", "group by", "order by", "max", "where", "as", "min" e outros comandos. --
 
+-- day, month, year --
+
+select distinct year(DataDoPedido)
+FROM Pedidos 
+
+select YEAR(DataDoPedido),'Ano Pedido',
+        MONTH(DataDoPedido), 'Mes Pedido',
+        count(*), 'Total'
+from Pedidos
+where MONTH(DataDoPedido) = 12
+group by YEAR(DataDoPedido), MONTH(DataDoPedido)
+
+
 
