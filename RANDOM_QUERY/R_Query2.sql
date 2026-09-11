@@ -88,3 +88,11 @@ where f.Pais = 'Japão'
 group by d.CodigoDoProduto, p.NomeDoProduto
 having sum(d.Quantidade) > 500
 
+-- Sub Query --
+
+-- Quem são os clientes da Alemanha que fizeram algum pedido --
+
+select * from Clientes
+where Pais = 'Alemanha' and CodigoDoCliente in (
+    select CodigoDoCliente from Pedidos
+)
