@@ -19,3 +19,9 @@ from Pedidos P
 join Funcionarios F
     on p.CodigoDoFuncionario = f.CodigoDoFuncionario
 group by f.Nome
+
+-- Ave maria, Nisston passa a aula de BD avançado igual arquitetura de dados --
+-- To mais perdido que cego em tiroteio, mas vamos que vamos, bora estudar e aprender mais sobre SQL e banco de dados. --
+-- Olha esse "count", "join", "inner join", "group by", "order by", "max", "where", "as", "min" e outros comandos. --
+
+
