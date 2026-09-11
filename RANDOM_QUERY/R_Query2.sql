@@ -52,5 +52,25 @@ WHERE f.Pais = 'Japão'
 GROUP BY YEAR(pe.DataDoPedido)
 ORDER BY Ano;
 
+-- Outro --
 
+select d.CodigoDoProduto, p.NomeDoProduto, sum(d.Quantidade) as QuantidadeVendida
+from Detalhes_do_Pedido d
+join Produtos p
+    on d.CodigoDoProduto = p.CodigoDoProduto
+join Fornecedores f
+    on p.CodigoDoFornecedor = f.CodigoDoFornecedor
+where f.Pais = 'Japão'
+group by d.CodigoDoProduto, p.NomeDoProduto    
 
+-- Preço --
+
+select d.CodigoDoProduto, p.NomeDoProduto, sum(d.Quantidade) as QuantidadeVendida,
+    sum(d.Quantidade * p.PrecoUnitario) as ValorTotal
+from Detalhes_do_Pedido d
+join Produtos p
+    on d.CodigoDoProduto = p.CodigoDoProduto
+join Fornecedores f
+    on p.CodigoDoFornecedor = f.CodigoDoFornecedor
+where f.Pais = 'Japão'
+group by d.CodigoDoProduto, p.NomeDoProduto
