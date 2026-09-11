@@ -74,3 +74,17 @@ join Fornecedores f
     on p.CodigoDoFornecedor = f.CodigoDoFornecedor
 where f.Pais = 'Japão'
 group by d.CodigoDoProduto, p.NomeDoProduto
+
+-- Having --
+
+select d.CodigoDoProduto, p.NomeDoProduto, sum(d.Quantidade) as QuantidadeVendida,
+    sum(d.Quantidade * p.PrecoUnitario) as ValorTotal
+from Detalhes_do_Pedido d
+join Produtos p
+    on d.CodigoDoProduto = p.CodigoDoProduto
+join Fornecedores f
+    on p.CodigoDoFornecedor = f.CodigoDoFornecedor
+where f.Pais = 'Japão'
+group by d.CodigoDoProduto, p.NomeDoProduto
+having sum(d.Quantidade) > 500
+
