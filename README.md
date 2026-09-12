@@ -16,8 +16,9 @@ Repository dedicated to studies, academic exercises, and miscellaneous SQL scrip
 To maintain academic organization, the folders in this repository follow an acronym pattern:
 * **`P`**: Indicates the Period (Semester).
 * **`BD1`**: Indicates the Database I (Banco de Dados I) course.
+* **`BD2`**: Indicates the Database II (Banco de Dados II) course.
 * **`E[number]`**: Indicates the Exercise number.
-* **`Sandbox`**: Environment for free testing, experimental queries, and draft scripts.
+* **`RANDOM_QUERY`**: Environment for free testing, experimental queries, and draft scripts.
 
 ---
 
@@ -39,5 +40,6 @@ Repositório destinado a estudos, exercícios acadêmicos e scripts diversos em 
 Para manter a organização acadêmica, as pastas deste repositório seguem um padrão de siglas:
 * **`P`**: Indica o Período.
 * **`BD1`**: Indica a disciplina de Banco de Dados I.
+* **`BD2`**: Indica a disciplina de Banco de Dados II.
 * **`E[número]`**: Indica o número do Exercício.
-* **`Sandbox`**: Ambiente de testes livres, consultas experimentais e rascunhos de scripts.
+* **`RANDOM_QUERY`**: Ambiente de testes livres, consultas experimentais e rascunhos de scripts.
