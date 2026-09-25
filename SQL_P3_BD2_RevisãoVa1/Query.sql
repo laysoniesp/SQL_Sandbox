@@ -28,4 +28,9 @@ on d.CodigoDoProduto = p.CodigoDoProduto
 group by d.CodigoDoProduto, p.NomeDoProduto
 order by sum(d.Quantidade) desc
 
---
+-- Q3: A  área  comercial  deseja  identificar  os  países  para  os  quais  foram  realizados 
+-- pedidos. Elabore uma consulta que apresente cada país de destino uma única vez, 
+-- sem repetir países. 
+
+select distinct p.PaisDeDestino
+from Pedidos p
