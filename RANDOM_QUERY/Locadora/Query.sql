@@ -109,6 +109,7 @@ INSERT INTO Filme_Ator (IDFilme, IDAtor, IDTipo) VALUES
 (5, 5, 5);
 
 -- Q6
+
 UPDATE Filme
 SET Duracao = 200
 WHERE Nome = 'Triplo X';
@@ -130,6 +131,7 @@ DELETE FROM Filme
 WHERE Duracao > 410;
 
 -- Q10
+
 CREATE TABLE Controle_Exclusao (
     IDExclusao INT IDENTITY(1,1) PRIMARY KEY,
     IDFilme INT,
