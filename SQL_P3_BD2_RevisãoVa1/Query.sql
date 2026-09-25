@@ -34,3 +34,19 @@ order by sum(d.Quantidade) desc
 
 select distinct p.PaisDeDestino
 from Pedidos p
+
+-- Q10: A  direção  deseja  saber  quais  funcionários  possuem  uma  quantidade  de  pedidos 
+-- superior à média de pedidos realizados pelos funcionários. Elabore uma consulta 
+-- utilizando  agrupamento e  uma subquery  para comparar  a  quantidade  de  pedidos 
+-- de cada funcionário com a média.
+
+select count(*) quantidade
+	from Pedidos p
+	group by p.CodigoDoFuncionario
+having count(*) > (
+select AVG(quantidade) from (
+	select count(*) quantidade
+	from Pedidos p
+	group by p.CodigoDoFuncionario
+) as subquery
+)
