@@ -12,3 +12,20 @@ join Funcionarios f
 on p.CodigoDoFuncionario = f.CodigoDoFuncionario
 group by p.CodigoDoFuncionario, f.Nome
 order by quantidade desc
+
+-- Q2: A  empresa  deseja  saber  quais  são  os  5  produtos  que  apresentam  a  maior 
+-- quantidade total vendida. Elabore uma consulta que apresente o nome do produto 
+-- e a soma das quantidades vendidas, ordenando do maior para o menor e limitando 
+-- o resultado aos 5 primeiros produtos. 
+
+select top 5 d.CodigoDoProduto,
+p.NomeDoProduto, 
+sum(d.Quantidade) Total,
+SUM(d.Quantidade)*1.1 'Nova meta' 
+from Detalhes_do_Pedido d
+join Produtos p
+on d.CodigoDoProduto = p.CodigoDoProduto
+group by d.CodigoDoProduto, p.NomeDoProduto
+order by sum(d.Quantidade) desc
+
+--
